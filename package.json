@@ -1,0 +1,38 @@
+{
+  "name": "common-utils",
+  "description": "utils for reuse",
+  "license": "MIT",
+  "repository": {
+    "type": "git"
+  },
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node app.js",
+    "start:dev": "nodemon --inspect app.js",
+    "lint": "eslint --fix **/*.js",
+    "format": "prettier -w .",
+    "test": "jest",
+    "test:watch": "jest --watch --maxWorkers=1",
+    "test:cov": "jest --coverage --maxWorkers=1"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.18.2",
+    "eslint": "^8.17.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^28.1.0",
+    "nodemon": "^2.0.16",
+    "prettier": "^2.6.2"
+  },
+  "jest": {
+    "rootDir": "src",
+    "collectCoverageFrom": [
+      "./utils/**"
+    ],
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node"
+  }
+}
