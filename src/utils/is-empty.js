@@ -16,7 +16,6 @@ function isEmpty(value) {
   return true;
 }
 
-
 module.exports = {
   isEmpty
 };

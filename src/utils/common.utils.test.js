@@ -16,7 +16,7 @@ test('all functions', () => {
   expect(typeof arraySum).toBe('function');
   expect(typeof clearString).toBe('function');
   expect(typeof uniqueArray).toBe('function');
-})
+});
 
 test(`cloneObj object`, () => {
   expect(
@@ -47,7 +47,7 @@ test(`diffDate invalid value`, () => {
 test(`sleep 1000ms`, async () => {
   const start = new Date();
   await sleep(1000);
-  expect(diffDate(start)).toContain('1.0')
+  expect(diffDate(start)).toContain('1.0');
 });
 
 test(`arraySum`, () => {
@@ -58,7 +58,6 @@ test(`clearString`, () => {
   expect(clearString('AAAAAA')).toBe('AAAAAA');
   expect(clearString('AAAAAA BBBBBB')).toBe('AAAAAA BBBBBB');
 });
-
 
 test(`uniqueArray`, () => {
   expect(uniqueArray([1, 3, 3, 3, 4])).toStrictEqual([1, 3, 4]);

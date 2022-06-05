@@ -33,7 +33,9 @@ function clearString(str) {
 
 function arraySum(array) {
   let result = 0;
-  array.forEach((item) => (result += item));
+  array.forEach((item) => {
+    result += item;
+  });
   return result;
 }
 

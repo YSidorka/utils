@@ -1,8 +1,7 @@
 const { isEmpty } = require('./is-empty');
-const { create10DimArray } = require('./10dim-array-loop');
 
 test(`isEmpty is function`, () => {
-  expect(typeof create10DimArray).toBe('function');
+  expect(typeof isEmpty).toBe('function');
 });
 
 test(`isEmpty - true cases`, () => {
