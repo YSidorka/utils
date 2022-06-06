@@ -12,11 +12,13 @@ function getGCD(array) {
 
   while (_array.length) {
     let _min = min;
-    _array = _array.map((value) => {
-      const mod = value % min;
-      if ((mod > 0) && (_min > mod)) _min = mod;
-      return mod;
-    }).filter((value) => value);
+    _array = _array
+      .map((value) => {
+        const mod = value % min;
+        if (mod > 0 && _min > mod) _min = mod;
+        return mod;
+      })
+      .filter((value) => value);
 
     // update minimum
     if (_array.length) {
@@ -30,4 +32,4 @@ function getGCD(array) {
 
 module.exports = {
   getGCD
-}
+};
