@@ -1,4 +1,4 @@
-const { _filterByObj } = require('./_filter-by-obj');
+const _filterByObj = require('./_filter-by-obj');
 
 function filterByObj(array, options) {
   return _filterByObj.call(array, options);

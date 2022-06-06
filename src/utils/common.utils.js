@@ -18,7 +18,6 @@ function diffDate(startDate, endDate) {
 
     return ((endValue - startValue) / 1000).toFixed(2);
   } catch (err) {
-    console.log(`Error: diffDate - ${err}`);
     return null;
   }
 }

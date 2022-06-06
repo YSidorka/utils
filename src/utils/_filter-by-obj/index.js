@@ -12,4 +12,4 @@ function _filterByObj(options) {
   );
 }
 
-module.exports = { _filterByObj };
+module.exports = _filterByObj;

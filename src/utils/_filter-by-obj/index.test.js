@@ -1,4 +1,4 @@
-const { _filterByObj } = require('./index');
+const _filterByObj = require('./index');
 
 const arr = [
   { domain: 'qq', type: 'page', value: 20 },

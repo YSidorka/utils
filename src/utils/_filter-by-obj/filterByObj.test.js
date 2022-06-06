@@ -1,4 +1,4 @@
-const { filterByObj } = require('./filterByObj');
+const { filterByObj } = require('../filterByObj');
 
 test(`filterByObj is function`, () => {
   expect(typeof filterByObj).toBe('function');
